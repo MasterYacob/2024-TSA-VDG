@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://iuilt3uu2o0u"]
+
+[ext_resource type="PackedScene" uid="uid://b11cql0m3rs8h" path="res://Audio/menu_audio.tscn" id="1_5t4f3"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 503.0
+offset_bottom = 313.0
+scale = Vector2(2.32, 2.08)
+
+[node name="MenuAudio" parent="." instance=ExtResource("1_5t4f3")]

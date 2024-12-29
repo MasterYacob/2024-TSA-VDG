@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://b11cql0m3rs8h"]
+
+[ext_resource type="Script" path="res://Audio/menu_audio_controller.gd" id="1_44833"]
+
+[sub_resource type="AudioStreamWAV" id="AudioStreamWAV_0qij3"]
+
+[node name="Audio" type="Node"]
+script = ExtResource("1_44833")
+
+[node name="MenuAudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamWAV_0qij3")
+
+[connection signal="finished" from="MenuAudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]
