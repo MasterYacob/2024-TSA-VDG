@@ -53,4 +53,3 @@ fast_fall={
 [rendering]
 
 renderer/rendering_method="mobile"
-textures/vram_compression/import_s3tc_bptc=true
